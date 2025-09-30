@@ -35,3 +35,32 @@ recent_posts_number = 3
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/GoHugoIO"
+
+[menu]
+
+  [[menu.main]]
+      name = "About"
+      weight = 1
+      identifier = "about"
+      url = "/about/"
+
+  [[menu.main]]
+      weight = 1
+      parent = "about"
+      name = "Our Robots"
+      identifier = "robots"
+      url = "/about/robots/"
+
+  [[menu.main]]
+      weight = 2
+      parent = "about"
+      name = "Sponsors"
+      identifier = "sponsors"
+      url = "/about/sponsors/"
+
+  [[menu.main]]
+      weight = 3
+      parent = "about"
+      name = "STMA Robotics"
+      identifier = "stma-robotics"
+      url = "/about/stma-robotics/"
