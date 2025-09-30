@@ -1,4 +1,4 @@
-````markdown
+
 # 7028 Website (Hugo)
 
 This repository contains the source code for the 7028 website, built with [Hugo](https://gohugo.io/) and deployed automatically from GitHub.
@@ -36,7 +36,7 @@ This repository contains the source code for the 7028 website, built with [Hugo]
    ```bash
    git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
    cd <REPO_NAME>
-````
+    ```
 
 4. **Run locally**
 
@@ -161,9 +161,4 @@ No manual deploy step is needed — just `git push`.
 * [Hugo Themes](https://themes.gohugo.io/)
 * [GitHub Docs](https://docs.github.com/)
 
-```
 
----
-
-Would you like me to also include **Bluehost-specific deployment instructions** (secrets, GitHub Actions workflow, etc.) in this README, or keep it focused just on editing/content?
-```
