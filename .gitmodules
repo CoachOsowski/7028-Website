@@ -4,3 +4,6 @@
 [submodule "themes/dairy"]
 	path = themes/dairy
 	url = https://github.com/AmazingRise/hugo-theme-diary.git
+[submodule "themes/blox"]
+	path = themes/blox
+	url = https://github.com/HugoBlox/hugo-blox-builder.git
