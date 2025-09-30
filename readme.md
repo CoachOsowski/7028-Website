@@ -1,7 +1,3 @@
-Here’s a solid **`README.md`** draft for your Hugo + GitHub project. It’s written for someone new joining your repo (or you on a fresh machine), covering setup, editing, and theming.
-
----
-
 ````markdown
 # 7028 Website (Hugo)
 
