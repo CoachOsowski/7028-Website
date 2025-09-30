@@ -78,6 +78,51 @@ This repository contains the source code for the 7028 website, built with [Hugo]
    ```
 
 ---
+## 📝 Formatting New Page Files
+Every page in Hugo starts with a front matter block at the top, followed by Markdown content.
+
+Example:
+
+```markdown
+---
+title: "My New Page"
+date: 2025-09-30
+draft: false
+tags: ["example", "demo"]
+---
+
+# Welcome to My New Page
+
+This is a sample post. Write your content in [Markdown](https://www.markdownguide.org/basic-syntax/).
+
+- Use headings with `#`
+- Add bullet points with `-` or `*`
+- Insert images:
+  ![Alt text](/img/example.jpg)
+- Add links:
+  [Hugo Documentation](https://gohugo.io/)
+
+```
+
+#### Front matter fields:
+
+title: The page’s display title.
+
+date: Creation date (auto-filled by hugo new).
+
+draft: true (hidden) or false (published).
+
+tags/categories: Optional metadata for filtering or theming.
+
+Content rules:
+
+Use standard Markdown syntax for text, headings, lists, links, images, etc.
+
+Place media in static/img/ and link with /img/....
+
+Keep filenames lowercase with hyphens (e.g., my-new-page.md).
+
+---
 
 ## 🎨 Switching & Downloading Themes
 

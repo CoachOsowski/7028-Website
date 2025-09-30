@@ -1,6 +1,6 @@
 baseURL = "https://7028robotics.org.com/"   # change to your real domain later
 languageCode = "en-us"
 title = "7028 - Binary Battalion"
-theme = "LofiCode"
+theme = "dairy"
 [pagination]
   pagerSize = 10

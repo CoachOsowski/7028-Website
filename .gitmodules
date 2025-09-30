@@ -1,3 +1,6 @@
 [submodule "themes/LofiCode"]
 	path = themes/LofiCode
 	url = https://github.com/raisingpixels/loficode-hugo-theme.git
+[submodule "themes/dairy"]
+	path = themes/dairy
+	url = https://github.com/AmazingRise/hugo-theme-diary.git
