@@ -1,0 +1,50 @@
+name: Build & Deploy (Hugo → Bluehost)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout (with submodules for theme)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      # --- Option A: Deploy via SFTP (recommended) ---
+      # Requires SSH on Bluehost; see Section 7.
+      - name: Deploy via SFTP (scp)
+        if: ${{ env.DEPLOY_VIA_SFTP == 'true' }}
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          source: "public/*"
+          target: "/home/${{ secrets.SSH_USER }}/public_html/"
+
+      # # --- Option B: Deploy via FTPS (shared hosting fallback) ---
+      # - name: Deploy via FTPS
+      #   if: ${{ env.DEPLOY_VIA_SFTP != 'true' }}
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      #   with:
+      #     server: ${{ secrets.FTP_SERVER }}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     protocol: ftps
+      #     local-dir: public
+      #     server-dir: /public_html/
