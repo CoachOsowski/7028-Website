@@ -7,3 +7,9 @@
 [submodule "themes/blox"]
 	path = themes/blox
 	url = https://github.com/HugoBlox/hugo-blox-builder.git
+[submodule "themes/blox-builder"]
+	path = themes/blox-builder
+	url = https://github.com/HugoBlox/hugo-blox-builder.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
