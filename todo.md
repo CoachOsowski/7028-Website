@@ -78,5 +78,3 @@ Bluehost
 
 Long FTPS uploads / timeouts → prefer SFTP (Option A). 
 Stack Overflow
-
-If you tell me your Bluehost account type (shared vs cloud) and whether SSH is enabled, I’ll lock in the exact server-dir/target path and secrets list for you.
